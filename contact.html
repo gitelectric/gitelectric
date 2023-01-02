@@ -132,7 +132,11 @@ https://templatemo.com/tm-546-sixteen-clothing
           <div class="col-md-8">
             <div class="contact-form">
 
-              <form id="contact" onsubmit="sendEmail(); reset(); return false;">
+              <form action="https://formsubmit.co/gitelectric.pvt.ltd@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Hi HomeX New Forgot Password Request..!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_next" value="https://gitelectric.github.io/gitelectric/response.html">
                 <div class="row">
                   <div class="col-lg-12 col-md-12 col-sm-12">
                     <fieldset>
@@ -152,35 +156,13 @@ https://templatemo.com/tm-546-sixteen-clothing
                   
                   <div class="col-lg-12">
                     <fieldset>
-                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                      <button type="submit" id="form-submit" class="filled-button" action="response.html">Send Message</button>
                     </fieldset>
                   </div>
                 </div>
               </form>
             </div>
           </div>
-          <script src="https://smtpjs.com/v3/smtp.js"></script>
-          <script>
-              function sendEmail(){
-                Email.send({
-                    Host : "smtp.gmail.com",
-                    Username : "gitelectric.pvt.ltd@gmail.com",
-                    Password : "GIT@electric8185",
-                    To : 'gitelectric.pvt.ltd@gmail.com',
-                    From : document.getElementById("Email").value,
-                    Subject : "Hi! GIT Electric PVT.LTD New Enquiry From..." + document.getElementById("Name").value,
-                     Body :  document.getElementById("Message").value
-                }).then(
-                 message => window.location ="response.html"
-                );
-              }
-          </script>
-
-
-
-
-
-
           
           <div class="col-md-4">
             <ul class="accordion">
